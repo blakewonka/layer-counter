@@ -1,11 +1,24 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "lib": ["es6"],
-    "strict": true,
+    "outDir": "dist",
+    "jsx": "react",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "skipLibCheck": true,
     "typeRoots": [
       "./node_modules/@types",
       "./node_modules/@figma"
-    ]
-  }
+    ],
+    "lib": ["DOM", "ES6", "DOM.Iterable", "ScriptHost", "ESNext.Array", "ES2019"]
+  },
+  "exclude": [
+    "node_modules",
+    "code.ts",
+    "dist"
+  ]
 }
