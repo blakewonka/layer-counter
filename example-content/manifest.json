@@ -1,9 +1,0 @@
-{
-  "name": "Layer Counter",
-  "id": "835724049419072437",
-  "api": "1.0.0",
-  "main": "dist/code.js",
-  "ui": "dist/ui.html",
-  "editorType": ["figma", "figjam"],
-  "networkAccess": { "allowedDomains": ["none"] }
-}
