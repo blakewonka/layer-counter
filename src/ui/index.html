@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layer Counter</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="header">
+        <div class="header-row">
+          <span class="header-label">Selected Layers</span>
+          <div class="header-right">
+            <span class="header-count" id="total">0</span>
+            <button
+              class="export-btn"
+              id="export"
+              title="Place on canvas"
+              hidden
+            >
+              <svg viewBox="0 0 16 16" fill="none">
+                <path
+                  d="M8 2v8M5 7l3 3 3-3"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3 12h10"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="body">
+        <div class="empty-state" id="empty">
+          <svg width="32" height="32" viewBox="0 0 32 32" fill="none">
+            <rect
+              x="4"
+              y="4"
+              width="10"
+              height="10"
+              rx="1"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+            <rect
+              x="18"
+              y="4"
+              width="10"
+              height="10"
+              rx="1"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+            <rect
+              x="4"
+              y="18"
+              width="10"
+              height="10"
+              rx="1"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+            <rect
+              x="18"
+              y="18"
+              width="10"
+              height="10"
+              rx="1"
+              stroke="currentColor"
+              stroke-width="1.5"
+            />
+          </svg>
+          <p class="empty-title">No layers selected</p>
+          <p class="empty-subtitle">
+            Select layers on the canvas to count them
+          </p>
+        </div>
+        <div class="count-list" id="list" hidden></div>
+      </div>
+
+      <div class="footer">
+        <label class="checkbox-label">
+          <input type="checkbox" class="checkbox-input" id="nested" checked />
+          <span class="checkbox-custom"></span>
+          <span class="checkbox-text">Include nested layers</span>
+        </label>
+        <div class="credit">
+          <a
+            class="credit-link"
+            href="https://blakewonka.com/layer-counter"
+            target="_blank"
+            rel="noopener noreferrer"
+            >blakewonka</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

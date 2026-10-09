@@ -1,0 +1,10 @@
+{
+  // Type-checks test/ (and, through its imports, the src/ modules under test).
+  // Node runs the tests, so node:* modules and Node globals come from @types/node.
+  "extends": "./tsconfig.base.json",
+  "compilerOptions": {
+    "lib": ["ES2020"],
+    "types": ["@figma/plugin-typings", "node"]
+  },
+  "include": ["test"]
+}

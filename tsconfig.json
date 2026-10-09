@@ -1,14 +1,11 @@
 {
-  "compilerOptions": {
-    "target": "es6",
-    "outDir": "dist",
-    "jsx": "react",
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "experimentalDecorators": true,
-    "removeComments": true,
-    "noImplicitAny": false,
-    "moduleResolution": "node",
-    "lib": ["DOM", "ES6", "DOM.Iterable", "ScriptHost", "ESNext.Array", "ES2019"]
-  }
+  // Solution-style root: no files of its own. Editors use the references to
+  // find the project (and therefore the `lib` settings) that owns a file;
+  // `npm run typecheck` runs the three projects directly.
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.plugin.json" },
+    { "path": "./tsconfig.ui.json" },
+    { "path": "./tsconfig.test.json" }
+  ]
 }

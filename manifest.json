@@ -1,10 +1,11 @@
 {
   "name": "Layer Counter",
-  "id": "835724049419072437",
+  "id": "1643531076743412573",
   "api": "1.0.0",
   "main": "dist/code.js",
   "ui": "dist/ui.html",
   "editorType": ["figma", "figjam"],
   "networkAccess": { "allowedDomains": ["none"] },
+  "documentAccess": "dynamic-page",
   "permissions": []
 }

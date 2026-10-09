@@ -1,0 +1,21 @@
+{
+  // Shared compiler options; tsconfig.plugin.json, tsconfig.ui.json and
+  // tsconfig.test.json extend this.
+  "compilerOptions": {
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noEmit": true,
+    // Type-only imports must be marked `import type`: Node runs the pure
+    // modules in test/ with native type stripping, which cannot remove an
+    // unmarked import of a type.
+    "verbatimModuleSyntax": true,
+    // Relative imports use explicit ".ts" extensions (same reason).
+    "allowImportingTsExtensions": true,
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "target": "ES2020",
+    "types": ["@figma/plugin-typings"]
+  }
+}
